@@ -1,37 +1,38 @@
-import React from 'react';
+import React from 'react'
 import {
   View,
   Text,
-  Button,
   TouchableOpacity,
-  StyleSheet,
-} from 'react-native';
-
+  StyleSheet
+} from 'react-native'
+import { Container, Header, Left, Body, Right, Button, Icon, Title } from 'native-base'
 
 class PageA extends React.Component {
-  render() {
+  render () {
     return (
-      <View>
-        <Text>PageA</Text>
-      </View>
-    );
+      <Container>
+        <Header>
+          <Left>
+            <Button transparent>
+              <Icon name='arrow-back' />
+            </Button>
+          </Left>
+          <Body>
+            <Title>Header</Title>
+          </Body>
+          <Right>
+            <Button transparent>
+              <Icon name='menu' />
+            </Button>
+          </Right>
+        </Header>
+      </Container>
+    )
   }
-
 }
 
-var styles = StyleSheet.create({
-  wrapper: {
-    borderRadius: 5,
-    marginBottom: 5,
-  },
-  button: {
-    backgroundColor: '#eeeeee',
-    padding: 10,
-  },
-});
-
 const PageAScreen = ({ navigation }) => (
-  <PageA banner="Home Tab" navigation={navigation} />
-);
+  <PageA banner='Home Tab' navigation={navigation} />
+)
 
 export default PageAScreen

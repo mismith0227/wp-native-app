@@ -4,18 +4,18 @@
  * @flow
  */
 
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {
   AppRegistry
-} from 'react-native';
+} from 'react-native'
 import App from './component/App'
 
 export default class wp_native_app extends Component {
-  render() {
+  render () {
     return (
       <App />
-    );
+    )
   }
 }
 
-AppRegistry.registerComponent('wp_native_app', () => wp_native_app);
+AppRegistry.registerComponent('wp_native_app', () => wp_native_app)

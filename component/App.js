@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Platform, ScrollView, StyleSheet } from 'react-native';
+import { Button, Platform, ScrollView, StyleSheet } from 'react-native'
 import { TabNavigator } from 'react-navigation'
 import Icon from 'react-native-vector-icons/Ionicons'
 
@@ -15,8 +15,8 @@ PageAScreen.navigationOptions = {
       size={26}
       style={{ color: tintColor }}
     />
-  ),
-};
+  )
+}
 
 PageBScreen.navigationOptions = {
   tabBarLabel: 'Search',
@@ -26,8 +26,8 @@ PageBScreen.navigationOptions = {
       size={26}
       style={{ color: tintColor }}
     />
-  ),
-};
+  )
+}
 
 PageCScreen.navigationOptions = {
   tabBarLabel: 'Setting',
@@ -37,23 +37,23 @@ PageCScreen.navigationOptions = {
       size={26}
       style={{ color: tintColor }}
     />
-  ),
-};
+  )
+}
 
 const App = TabNavigator(
   {
     Home: {
       screen: PageAScreen,
-      path: '',
+      path: ''
     },
     People: {
       screen: PageBScreen,
-      path: 'cart',
+      path: 'cart'
     },
     Chat: {
       screen: PageCScreen,
-      path: 'chat',
-    },
+      path: 'chat'
+    }
   },
   {
     tabBarOptions: {
@@ -61,7 +61,7 @@ const App = TabNavigator(
       tabBarPosition: 'bottom',
       animationEnabled: false,
       swipeEnabled: false
-    },
+    }
   }
 )
 
