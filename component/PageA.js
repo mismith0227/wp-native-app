@@ -19,17 +19,11 @@ class PageA extends React.Component {
       <Container>
         <Header>
           <Left>
-            <Button transparent>
-              <Icon name='arrow-back' />
-            </Button>
           </Left>
           <Body>
             <Title>Header</Title>
           </Body>
           <Right>
-            <Button transparent>
-              <Icon name='menu' />
-            </Button>
           </Right>
         </Header>
         <Button
@@ -51,6 +45,7 @@ const PageAboard = ({ navigation }) => (
 const MyProfileScreen = ({ navigation }) => (
   <ArticleDetail
     navigation={navigation}
+    onGoBack={() => navigation.goBack(null)}
   />
 )
 
